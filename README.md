@@ -7,11 +7,9 @@ model from detectron2://ImageNetPretrained/FAIR/X-101-32x8d.pkl
 
 ## Requirements
 
-To install requirements:
+To install requirements
 
-```setup
-pip install -r requirements.txt
-```
+follow the step from  https://detectron2.readthedocs.io/en/latest/tutorials/install.html to install detectron2
 
 ## My environment
 GUP: GTX3060
@@ -19,37 +17,26 @@ GUP: GTX3060
 CUDA: 11.3
 cudnn: 8.2.1
 
-## Preprocess
-prepare dataset, config.yaml
-
-1.change path setting in split_data_noscale.py and run
-```data split
-python split_data_noscale.py
-```
-2.set the path in my.yaml
-
 ## Training
 
 To train the model(s) in the paper, run this command:
 
 ```train
-python train.py --img 640 --batch 16 --epochs 3 --data data/my.yaml --weights yolov5m6.pt
+python train_custom.py
 ```
 
 ## Pre-trained Models
 
 You can download pretrained models here:
 
-- [My awesome model](https://drive.google.com/file/d/1bKORMAP306sk5m_d4swgeMfaHC3bUoBv/view?usp=sharing) 
+- [My awesome model](https://drive.google.com/file/d/1BHcU5-P-zK5tOsZ2gaqF7VlCr8e0yumR/view?usp=sharing) 
 
 
 ## Inference
 to reproduce submission file
 
-chamge path of test img dir and weights at line 12,16,26
-
 ```Inference
- python predit.py
+ python 
 ```
 
 ## colab
