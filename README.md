@@ -36,12 +36,8 @@ You can download pretrained models here:
 to reproduce submission file
 
 ```Inference
- python 
+python eval_custom_final_v10.py
 ```
-
-## colab
-
-- [My colab](https://colab.research.google.com/drive/1vVYgnGcdu5aO37yeromgRU38csBUziJG?usp=sharing) 
 
 
 
